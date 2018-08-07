@@ -39,16 +39,16 @@
         hljs.initHighlightingOnLoad();
 
         // numbering for pre>code blocks
-        $(function() {
-            $('pre code').each(function() {
-                var lines = $(this).text().split('\n').length - 1;
-                var $numbering = $('<ul/>').addClass('pre-numbering');
-                $(this).addClass('has-numbering').parent().append($numbering);
-                for (var i = 1; i <= lines; i++) {
-                    $numbering.append($('<li/>').text(i));
-                }
-            });
-        });
+        // $(function() {
+        //     $('pre code').each(function() {
+        //         var lines = $(this).text().split('\n').length - 1;
+        //         var $numbering = $('<ul/>').addClass('pre-numbering');
+        //         $(this).addClass('has-numbering').parent().append($numbering);
+        //         for (var i = 1; i <= lines; i++) {
+        //             $numbering.append($('<li/>').text(i));
+        //         }
+        //     });
+        // });
 
         var toc = $('.toc');
         // toc config
